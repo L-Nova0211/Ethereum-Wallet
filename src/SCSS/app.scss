@@ -1,0 +1,62 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.app {
+  margin: 1rem 0;
+
+  .accordion {
+    .card {
+      margin-bottom: 2rem;
+
+      &:first-of-type {
+        border-bottom: 1px solid rgba(0,0,0,0.125);
+      }
+    }
+  }
+
+  #transactionAccordion {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 1rem;
+        float: left;
+        width: 100%;
+
+        .fa {
+          float: left;
+          margin-right: 0.51rem;
+        }
+
+        .transaction {
+          float: left;
+        }
+
+        .address {
+          font-weight: bold;
+        }
+
+        .send {
+          .amount {
+            color: red;
+          }
+        }
+
+        .receive {
+          .amount {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.react-modal-content {
+  margin-top: 2rem;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
